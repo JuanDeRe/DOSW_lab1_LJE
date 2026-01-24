@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.TreeSet;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Stream;
@@ -16,6 +17,17 @@ public class Reto5 {
     }
     public static HashSet<Integer> generadorHashSet(Collection<Integer> coleccion) {
         return procesarHashSet(coleccion);
+    }
+
+    public static TreeSet<Integer> unionSets(HashSet<Integer> hash, TreeSet<Integer> tree) {
+        TreeSet<Integer> union = new TreeSet<>();
+        union.addAll(hash);
+        union.addAll(tree);
+        return union;
+    }
+
+    private static void imprimirResultados(TreeSet<Integer> tree) {
+        tree.stream().forEach(n -> System.out.println("Numero en arena: " + n));
     }
 
     private static HashSet<Integer> procesarHashSet(Collection<Integer> coleccion) {
