@@ -29,7 +29,7 @@ class Student
      * @param email correo electronico del estudiante
      * @param semester semestre que actualmente esta cursando
      */
-    public student(String name, int age, String email,int semester)
+    public Student(String name, int age, String email,int semester)
     {
         this.name = name;
         this.age = age;
@@ -85,9 +85,9 @@ public class Reto1
     public static void main(String[] args)
     {
         List<Student> groupJLE = new ArrayList<>();
-        groupJLE.add(new Estudiante("Luiza Gonzalez", 20, "luiza.gonzalez-v@mail.escuelaing.edu.co", 5));
-        groupJLE.add(new Estudiante("Juan Roa", 21, "juan.roa-h@mail.escuelaing.edu.co", 6));
-        groupJLE.add(new Estudiante("Eduardo Rico", 22, "Eduardo.rico@mail.escuelaing.edu.co", 7));
+        groupJLE.add(new Student("Luiza Gonzalez", 20, "luiza.gonzalez-v@mail.escuelaing.edu.co", 5));
+        groupJLE.add(new Student("Juan Roa", 21, "juan.roa-h@mail.escuelaing.edu.co", 6));
+        groupJLE.add(new Student("Eduardo Rico", 22, "Eduardo.rico@mail.escuelaing.edu.co", 7));
 
         String finalMessage = WelcomeMessage.generateMessage(groupJLE);
         System.out.println(finalMessage);
