@@ -15,7 +15,6 @@ public class CarreraParalela
         Integer max = maximo.apply(lista);
         return max;
     }
-
     public static Integer numeroMin(List<Integer> lista){
         Fuction<List<Integer>,Integer> minimo = array -> array.stream().min(Integer::compareTo);
         Integer min = minimo.apply(lista);
@@ -27,5 +26,4 @@ public class CarreraParalela
         Integer cant = cantidad.apply(lista);
         return cant;
     }
-
 }
