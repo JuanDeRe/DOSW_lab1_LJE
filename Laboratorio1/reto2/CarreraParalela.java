@@ -34,13 +34,19 @@ public class CarreraParalela
         boolean verificacion = (numero % 2 == 0) ? true : false;
         return verificacion;
     }
+    public static boolean maximoDivisorDos(Integer numero){
+        boolean verificacion = (( numero != 0 || numero != null) && (2 % numero == 0)) ? true : false;
+        return verificacion;
+    }
 
     public static Resultado calculoResultado(List<Integer> lista){
         Integer cant = cantidadElementos(lista);
         Integer max = numeroMax(lista);
         Integer min = numeroMin(lista);
         boolean verificacion = verificarMultiploDeDos(max);
-        Resultado calculo = new Resultado(max, min, cant, verificacion);
+        boolean verificacionDivisor = maximoDivisorDos(max);
+        Resultado calculo = new Resultado(max, min, cant, verificacion, verificacionDivisor);
+
         return calculo;
     }
 
@@ -49,12 +55,14 @@ public class CarreraParalela
         public Integer minimo;
         public Integer cantidad;
         public boolean maximoMultiploDeDos;
+        public boolean maximoDivisorDos;
 
-        public Resultado(Integer maximo, Integer minimo, Integer cantidad, boolean maximoMultiploDeDos) {
+        public Resultado(Integer maximo, Integer minimo, Integer cantidad, boolean maximoMultiploDeDos, boolean maximoDivisorDos) {
             this.maximo = maximo;
             this.minimo = minimo;
             this.cantidad = cantidad;
             this.maximoMultiploDeDos = maximoMultiploDeDos;
+            this.maximoDivisorDos = maximoDivisorDos;
         }
 
         public void imprimir() {
@@ -62,6 +70,7 @@ public class CarreraParalela
             System.out.println("Minimo: " + minimo);
             System.out.println("Cantidad: " + cantidad);
             System.out.println("MaximoMultiploDeDos: " + maximoMultiploDeDos);
+            System.out.println("MaximoDivisorDos: " + maximoDivisorDos);
         }
     }
 }
