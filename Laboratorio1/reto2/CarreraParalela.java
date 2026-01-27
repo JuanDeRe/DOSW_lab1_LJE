@@ -38,6 +38,11 @@ public class CarreraParalela
         boolean verificacion = (( numero != 0 || numero != null) && (2 % numero == 0)) ? true : false;
         return verificacion;
     }
+    public static boolean verificacionCantidadImpar(Integer numero){
+        boolean verificacion = (( numero != 0 || numero != null) && ( numero % 2 != 0)) ? true : false;
+        return verificacion;
+    }
+
 
     public static Resultado calculoResultado(List<Integer> lista){
         Integer cant = cantidadElementos(lista);
@@ -45,7 +50,8 @@ public class CarreraParalela
         Integer min = numeroMin(lista);
         boolean verificacion = verificarMultiploDeDos(max);
         boolean verificacionDivisor = maximoDivisorDos(max);
-        Resultado calculo = new Resultado(max, min, cant, verificacion, verificacionDivisor);
+        boolean verificacionCantidadImpar = verificacionCantidadImpar(cant);
+        Resultado calculo = new Resultado(max, min, cant, verificacion, verificacionDivisor,verificacionCantidadImpar);
 
         return calculo;
     }
@@ -56,13 +62,16 @@ public class CarreraParalela
         public Integer cantidad;
         public boolean maximoMultiploDeDos;
         public boolean maximoDivisorDos;
+        public boolean cantidadImpar;
 
-        public Resultado(Integer maximo, Integer minimo, Integer cantidad, boolean maximoMultiploDeDos, boolean maximoDivisorDos) {
+        public Resultado(Integer maximo, Integer minimo, Integer cantidad, boolean maximoMultiploDeDos, boolean maximoDivisorDos, boolean cantidadImpar) {
             this.maximo = maximo;
             this.minimo = minimo;
             this.cantidad = cantidad;
             this.maximoMultiploDeDos = maximoMultiploDeDos;
             this.maximoDivisorDos = maximoDivisorDos;
+            this.cantidadImpar = cantidadImpar;
+
         }
 
         public void imprimir() {
@@ -71,6 +80,7 @@ public class CarreraParalela
             System.out.println("Cantidad: " + cantidad);
             System.out.println("MaximoMultiploDeDos: " + maximoMultiploDeDos);
             System.out.println("MaximoDivisorDos: " + maximoDivisorDos);
+            System.out.println("CantidadImpar: " + cantidadImpar);
         }
     }
 }
