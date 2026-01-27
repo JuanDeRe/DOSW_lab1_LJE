@@ -16,4 +16,16 @@ public class CarreraParalela
         return max;
     }
 
+    public static Integer numeroMin(List<Integer> lista){
+        Fuction<List<Integer>,Integer> minimo = array -> array.stream().min(Integer::compareTo);
+        Integer min = minimo.apply(lista);
+        return min;
+    }
+
+    public static Integer cantidadElementos(List<Integer> lista){
+        Function<List<Integer>,Integer> cantidad = array -> array.size();
+        Integer cant = cantidad.apply(lista);
+        return cant;
+    }
+
 }
