@@ -1,4 +1,3 @@
-package reto1;
 
 import java.util.List;
 import java.util.Arrays;
@@ -79,3 +78,4 @@ public class Reto1 {
         );
     }
 }
+
