@@ -117,6 +117,7 @@ public class CarreraParalela
         }
 
 
+
         public void imprimir() {
             System.out.println("Maximo: " + maximo);
             System.out.println("Minimo: " + minimo);
