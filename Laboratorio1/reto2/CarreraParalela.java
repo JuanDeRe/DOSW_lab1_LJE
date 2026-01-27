@@ -1,5 +1,6 @@
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Function;
 
 
@@ -8,11 +9,8 @@ public class CarreraParalela
     public static void main(String[] args)
     {
         System.out.println("Carrera en paralelo-LJE");
-        List<Integer> array = new ArrayList<>(Arrays.asList(7,2,6,19,23,1,90));
-        Resultado r = fusionarFunciones(array);
-        System.out.println("Maximo: " + r.maximo);
-        System.out.println("Minimo " + r.minimo);
-        System.out.println("Cantidad"+ r.cantidad);
+        List lista = new ArrayList(Arrays.asList(4,43,11,4,6,7,1));
+        calculoResultado(lista).imprimir();
     }
 
     public static Integer numeroMax(List<Integer> lista){
@@ -31,28 +29,29 @@ public class CarreraParalela
         Integer cant = cantidad.apply(lista);
         return cant;
     }
-
-    public static Resultado fusionarFunciones(List<Integer> lista)
-    {
-        Integer cantidad = cantidadElementos(lista);
-        Integer minimo = numeroMin(lista);
-        Integer maximo = numeroMax(lista);
-
-        Resultado result = new Resultado(maximo,minimo,cantidad);
-        return result;
+    public static Resultado calculoResultado(List<Integer> lista){
+        Integer cant = cantidadElementos(lista);
+        Integer max = numeroMax(lista);
+        Integer min = numeroMin(lista);
+        Resultado calculo = new Resultado(cant, max, min);
+        return calculo;
     }
-    private static class Resultado
-    {
+
+    private static class Resultado {
         public Integer maximo;
         public Integer minimo;
         public Integer cantidad;
 
-        public Resultado(Integer maximo, Integer minimo, Integer cantidad)
-        {
+        public Resultado(Integer maximo, Integer minimo, Integer cantidad) {
             this.maximo = maximo;
             this.minimo = minimo;
             this.cantidad = cantidad;
         }
 
+        public void imprimir() {
+            System.out.println("Maximo: " + maximo);
+            System.out.println("Minimo: " + minimo);
+            System.out.println("Cantidad: " + cantidad);
+        }
     }
 }
