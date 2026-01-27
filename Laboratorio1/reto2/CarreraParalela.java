@@ -38,6 +38,11 @@ public class CarreraParalela
         boolean verificacion = (( numero != 0 || numero != null) && (2 % numero == 0)) ? true : false;
         return verificacion;
     }
+    public static boolean verificacionCantidadImpar(Integer numero){
+        boolean verificacion = (( numero != 0 || numero != null) && ( numero % 2 != 0)) ? true : false;
+        return verificacion;
+    }
+
 
     public static Resultado calculoResultado(List<Integer> lista){
         Integer cant = cantidadElementos(lista);
@@ -46,7 +51,8 @@ public class CarreraParalela
         boolean verificacion = verificarMultiploDeDos(max);
         boolean verificacionDivisor = maximoDivisorDos(max);
         boolean verificacionCantPar = verificarMultiploDeDos(cant);
-        Resultado calculo = new Resultado(max, min, cant, verificacion, verificacionDivisor, verificacionCantPar);
+        boolean verificacionCantidadImpar = verificacionCantidadImpar(cant);
+        Resultado calculo = new Resultado(max, min, cant, verificacion, verificacionDivisor,verificacionCantPar,verificacionCantidadImpar);
 
         return calculo;
     }
@@ -58,13 +64,16 @@ public class CarreraParalela
         public boolean maximoMultiploDeDos;
         public boolean maximoDivisorDos;
         public boolean cantidadMultiploDeDos;
+        public boolean cantidadImpar;
 
-        public Resultado(Integer maximo, Integer minimo, Integer cantidad, boolean maximoMultiploDeDos, boolean maximoDivisorDos, boolean cantidadMultiploDeDos) {
+        public Resultado(Integer maximo, Integer minimo, Integer cantidad, boolean maximoMultiploDeDos, boolean maximoDivisorDos,boolean cantidadMultiploDeDos, boolean cantidadImpar) {
             this.maximo = maximo;
             this.minimo = minimo;
             this.cantidad = cantidad;
             this.maximoMultiploDeDos = maximoMultiploDeDos;
             this.maximoDivisorDos = maximoDivisorDos;
+            this.cantidadImpar = cantidadImpar;
+
             this.cantidadMultiploDeDos = cantidadMultiploDeDos;
         }
 
@@ -75,6 +84,7 @@ public class CarreraParalela
             System.out.println("MaximoMultiploDeDos: " + maximoMultiploDeDos);
             System.out.println("MaximoDivisorDos: " + maximoDivisorDos);
             System.out.println("CantidadMultiploDeDos: " + cantidadMultiploDeDos);
+            System.out.println("CantidadImpar: " + cantidadImpar);
         }
     }
 }
