@@ -6,7 +6,6 @@
  * Los estudiantes deben ser almacenados en la estructura de datos List.
  * Use stream(), map() y collect().
  **/
-package reto1;
 
 import java.util.ArrayList;
 import java.util.List;
