@@ -66,7 +66,7 @@ Tecnologias y estrategias que se usen realmente en el mundo laboral
 8. ¿Qué les gustaría aprender?
    -Me gustaría aprender a trabajar en equipo y front.
 9. ¿En qué se sienten más inseguros o les cuesta un poco más frente a los temas de la materia?
-- la parte de integrar front con back
+-la parte de integrar front con back
     
 #### Eduardo Rico
 1. Nombre por el cual les gusta ser llamados (o alias)
