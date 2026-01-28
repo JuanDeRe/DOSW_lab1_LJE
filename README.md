@@ -36,6 +36,8 @@ En este reto se modelaron objetos Estudiante con información personal (nombre, 
 **Evidencia:**
 ![Captura](Screenshots/Reto2.png)
 
+![Captura](Screenshots/Pregunta3.png)
+
 Captura de imagen
 
 **Descripción:**
