@@ -17,7 +17,7 @@ Eduardo Rico Duarte
   
 **Evidencia:**
   
-![Captura](Evidenciasretos/Reto1.png)
+![Captura](Screenshots/Reto1.png)
 
 Captura de imagen
 
@@ -34,7 +34,7 @@ En este reto se modelaron objetos Estudiante con información personal (nombre, 
 
 
 **Evidencia:**
-![Captura](Evidenciasretos/Reto2.png)
+![Captura](Screenshots/Reto2.png)
 
 Captura de imagen
 
@@ -50,7 +50,7 @@ Este reto simuló una carrera usando ramas de Git donde cada estudiante desarrol
 - Juan David Roa Hernández 
 
 **Evidencia:**
-![Captura](Evidenciasretos/Reto3.png)
+![Captura](Screenshots/Reto3.png)
 Captura de imagen
 
 **Descripción:**
@@ -65,7 +65,7 @@ Cada estudiante trabajó su rama cada uno con una función diferente:  StringBui
 - Luiza Mariana González Veloza
 
 **Evidencia:**
-![Captura](Evidenciasretos/Reto4.png)
+![Captura](Screenshots/Reto4.png)
 Captura de imagen
 
 **Descripción:**
@@ -80,7 +80,7 @@ Este reto se centró en el uso de HashMap y Hashtable para manejar claves duplic
 - Luiza Mariana González Veloza
 
 **Evidencia:**
-![Captura](Evidenciasretos/Reto5.png)
+![Captura](Screenshots/Reto5.png)
 Captura de imagen
 
 **Descripción:**
@@ -95,7 +95,7 @@ En este reto se trabajó con colecciones HashSet y TreeSet para almacenar númer
 
 
 **Evidencia:**
-![Captura](Evidenciasretos/Reto6.png)
+![Captura](Screenshots/Reto6.png)
 Captura de imagen
 
 **Descripción:**
@@ -113,7 +113,7 @@ R/ Lo que sucede es un conflicto de fusión. Git detiene el merge porque no pued
 3. ¿Cómo puedes ver gráficamente el historial de merges y ramas en consola?
 R/ Para ver el historial de una forma más visual en la terminal de usa el comando: git log --graph --oneline --decorate --all. Este comando muestra un pequeño diagrama donde puedes identificar ramas y merges, como se puede evidenciar en la imagen siguiente.
 
-![Captura](Evidenciasretos/Pregunta3.png)
+![Captura](Screenshots/Pregunta3.png)
 
 4. Explica la diferencia entre un commit y un push.
 Un commit guarda los cambios en el repositorio local, es decir, solo en la computadora en la que se está trabajando. Un push, por otro lado, envía esos commits al repositorio remoto en nuestro caso a Git Hub . Básicamente: commit = local, push = compartirlo con los demás.
