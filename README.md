@@ -2,9 +2,9 @@
 
 ## Integrantes
 
-Juan David Roa Hernández 
-Luiza Mariana González Veloza
-Eduardo Rico Duarte
+-Juan David Roa Hernández 
+-Luiza Mariana González Veloza
+-Eduardo Rico Duarte
 
 
 ## Retos completados
