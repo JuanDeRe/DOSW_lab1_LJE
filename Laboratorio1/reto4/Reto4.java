@@ -1,10 +1,6 @@
-
-
-
-
 import java.util.*;
 import java.util.Hashtable;
-
+import java.util.stream.Collectors;
 public class Reto4 {
 
     // Estudiante A Eduardo Rico
@@ -25,14 +21,15 @@ public class Reto4 {
      * Método que crea un Hashtable a partir de pares clave-valor
      * Ignora claves duplicadas (conserva el primer valor encontrado)
      * Asegura la sincronización
+     *
      * @param treasureMap
      * @return la hashtable creada
      */
-    public static Hashtable<String, Integer> createHashtableB(Map<String, Integer> treasureMap)
-    {
+    public static Hashtable<String, Integer> createHashtableB(Map<String, Integer> treasureMap) {
         Hashtable<String, Integer> hashtable = new Hashtable<>();
         // Usar lambda para procesar cada par
-        treasureMap.forEach((key, value) -> {hashtable.putIfAbsent(key, value);
+        treasureMap.forEach((key, value) -> {
+            hashtable.putIfAbsent(key, value);
         });
         return hashtable;
     }
@@ -49,6 +46,38 @@ public class Reto4 {
 
         return resultado;
     }
+
+    /**
+     * Función que convierte todas las claves a mayúsculas antes de imprimir
+     * @param mapa el mapa a procesar
+     */
+    public static void imprimirConMayusculas(Map<String, Integer> mapa) {
+        mapa.entrySet().stream().map(e -> "Clave: " + e.getKey().toUpperCase() + " | Valor: " + e.getValue()).forEach(System.out::println);
+    }
+
+    /**
+     * Función que ordena las claves de forma ascendente antes de imprimir
+     *
+     * @param mapa el mapa a procesar
+     */
+    public static void imprimirOrdenado(Map<String, Integer> mapa) {
+        mapa.entrySet().stream().sorted(Map.Entry.comparingByKey()).map(e -> "Clave: " + e.getKey() + " | Valor: " + e.getValue())
+                .forEach(System.out::println);
+    }
+
+    /**
+     * FUNCIÓN FINAL UNIFICADA
+     * Combina HashMap y Hashtable, prioriza Hashtable, convierte a mayúsculas
+     * y ordena en forma ascendente usando Collectors.toMap() y lambda
+     */
+    public static void fusionFinal(Map<String, Integer> hashMap, Hashtable<String, Integer> hashtable) {
+        Map<String, Integer> combinado = new HashMap<>(hashMap);
+        combinado.putAll(hashtable);
+        //requisito Collectors.toMap() con lambda
+        combinado.entrySet().stream().collect(Collectors.toMap(e -> e.getKey().toUpperCase(),
+                Map.Entry::getValue, (v1, v2) -> v2, TreeMap::new)).forEach((clave, valor) -> System.out.println("Clave: " + clave + "| Valor: " + valor));
+    }
+
 
     public static void main(String[] args) {
 
@@ -69,12 +98,6 @@ public class Reto4 {
 
         Hashtable<String, Integer> resultMap = createHashtableB(mapaEntrada);
 
-        //Salida
-        HashMap <String, Integer> mapafinal = combinarMapas(hashMap,resultMap);
-        mapafinal.entrySet().stream()
-                .sorted(Map.Entry.comparingByKey())
-                .map(e -> "Clave: " + e.getKey() + " | Valor: " + e.getValue())
-                .forEach(System.out::println);
-
-}
+        fusionFinal(hashMap, resultMap);
+    }
 }
