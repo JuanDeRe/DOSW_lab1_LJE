@@ -1,10 +1,149 @@
-# Maratón Git 2026-1
 
-## Integrantes
+# LABORATORIO 1: INTRODUCCIÓN A GIT Y PROGRAMACIÓN FUNCIONAL
 
-- Juan David Roa Hernández
-- Luiza Mariana González Veloza
-- Eduardo Rico Duarte
+Escuela Colombiana de Ingeniería Julio Garavito – DOSW
+
+### Nombres: 
+- Juan David Roa
+- Luiza González
+- Eduardo Rico
+
+### OBJETIVO:
+
+En el presente laboratorio vamos a aprender los manejos básicos de GitHub junto a los principios de la programación funcional y el manejo de algunas estructuras de datos. Esto con el propósito de apropiar y comenzar a trabajar con las fundamentaciones del curso. Para este laboratorio se trabajará de a parejas, pero cada uno trabajará en su computador.
+
+
+
+## PARTE 1 – ONBOARDING
+
+1. Hoja de vida
+
+####   Juan David Roa
+
+1. Nombre por el cual les gusta ser llamados (o alias)
+   -Juan David
+
+2. Semestre
+ -7mo
+
+3. Lenguajes de programación que conocen.
+-Python, Java, MySQL, Bash, Marie, C
+
+4. Frameworks o tecnologías que conocen.
+-Ninguno
+
+5. Proyectos personales o académicos (si tienen).
+-aprender a tocar bien guitarra y aprender alemán
+
+6. ¿Pertenecen a algún semillero? ¿A cuál?
+-no
+
+7. Hobbies o intereses fuera de la Escuela. 
+-guitarra, ir al gimnasio, videojuegos, los idiomas, los carros
+
+8. ¿Qué les gustaría aprender?
+-Organizar un trabajo en equipo de una manera de la manera mas eficiente y como trabajar así.
+Tecnologias y estrategias que se usen realmente en el mundo laboral
+
+9. ¿En qué se sienten más inseguros o les cuesta un poco más frente a los temas de la materia?
+-Interfaces y herencias (Cuando conviene mas qué) y frontend    
+
+#### Luiza Gonzalez
+1. Nombre por el cual les gusta ser llamados (o alias).
+   -Luiza
+2. Semestre.
+   -Sexto semestre
+3. Lenguajes de programación que conocen.
+   -Python, Java,MySQL
+4. Frameworks o tecnologías que conocen.
+   -Ninguna
+5. Proyectos personales o académicos (si tienen).
+   -Manejar Italiano e Ingles.
+6. ¿Pertenecen a algún semillero? ¿A cuál?
+   -No pertenezco a ningún semillero
+7. Hobbies o intereses fuera de la Escuela.
+   -Ver series o películas y dibujar.
+8. ¿Qué les gustaría aprender?
+   -Me gustaría aprender a trabajar en equipo y front.
+9. ¿En qué se sienten más inseguros o les cuesta un poco más frente a los temas de la materia?
+- la parte de integrar front con back
+    
+#### Eduardo Rico
+1. Nombre por el cual les gusta ser llamados (o alias)
+-Rico
+2. Semestre
+-7
+3. Lenguajes de programación que conocen.
+-Python, Java, SQL
+4. Frameworks o tecnologías que conocen.
+-Ninguno
+5. Proyectos personales o académicos (si tienen).
+Tener el mayor crecimiento personal e intelectual posible aprendiendo cada día algo nuevo
+6. ¿Pertenecen a algún semillero? ¿A cuál?
+-no
+7. Hobbies o intereses fuera de la Escuela.
+-gimnasio, futbol, running en general deporte
+8. ¿Qué les gustaría aprender?
+-Perdón por mi respuesta cliché, pero todo lo que más se pueda, mi objetivo es absorber el mayor conocimiento posible
+9. ¿En qué se sienten más inseguros o les cuesta un poco más frente a los temas de la materia?
+-En ocasiones anteriores he tenido muchas dificultades con mis compañeros de grupo lo que ha generado en mí que me cueste más trabajar en equipo, en cuanto a los temas de la materia pues me dejaré sorprender jeje
+
+
+
+
+
+### Horarios Disponibles:
+
+Luiza: Sábados PM, Domingo, Entre semana después de las 7PM
+
+Rico: sábado, Domingo, martes y jueves tarde
+
+Juan David: lunes, martes, sábados tarde, Domingo depende.
+
+
+
+### Compromisos:
+
+-Responsabilidad
+
+-Comprometerse a dar una Buena explicación de las ideas
+
+-Una buena comunicación al desarrollar cada parte individualmente para que en conjunto tengamos un conocimiento general del Proyecto
+
+-Estar dispuesto a apoyar al compañero
+
+-Comunicación asertiva
+
+
+
+### Usuarios Github:
+
+Juan David: JuanDeRe
+Luiza Gonzales: LuizaGonzalez
+Eduardo Rico: EduardoRico26
+
+
+## PARTE 2 - Preparación
+
+Creación del repositorio y adición de los miembros
+
+![Captura](Screenshots/L1.png)
+
+Creación de la rama develop desde el github
+
+![Captura](Screenshots/L2.png)
+
+Descargue el repositorio en su local con git clone url_del_repositorio.
+
+![Captura](Screenshots/L3.png)
+
+Una vez descargado, cada integrante debe crear una rama con el comando git checkout -b nombre_de_la_rama, partiendo desde develop con el formato: feature/ApellidoNombre_2026-1.
+
+![Captura](Screenshots/L4.png)
+
+Un integrante de la pareja dentro de su rama generará una carpeta con la siguiente estructura de paquetes:
+
+![Captura](Screenshots/L5.png)
 
 
 ## Retos completados
@@ -145,4 +284,10 @@ El comando git branch nombre solo crea la rama y te mantiene en la misma rama do
 
 12. ¿Por qué es recomendable crear ramas feature/ para nuevas funcionalidades en lugar de trabajar en main directamente?
 Porque trabajar en una rama feature permite mantener main siempre estable y funcional, sin riesgos de romperla con cambios en desarrollo. También facilita el trabajo en equipo, ya que cada funcionalidad se desarrolla aislada, y además permite hacer revisiones más organizadas mediante pull requests antes de integrar algo en el código principal.
+
+
+
+ 
+
+ 
 
