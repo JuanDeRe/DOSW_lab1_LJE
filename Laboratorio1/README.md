@@ -286,6 +286,23 @@ El comando git branch nombre solo crea la rama y te mantiene en la misma rama do
 Porque trabajar en una rama feature permite mantener main siempre estable y funcional, sin riesgos de romperla con cambios en desarrollo. También facilita el trabajo en equipo, ya que cada funcionalidad se desarrolla aislada, y además permite hacer revisiones más organizadas mediante pull requests antes de integrar algo en el código principal.
 
 
+# OBSERVACIONES - GENERALES
+
+<img width="752" height="344" alt="image" src="https://github.com/user-attachments/assets/f76926bf-0d08-4d7a-9310-a56631de0597" />
+<img width="749" height="681" alt="image" src="https://github.com/user-attachments/assets/39d164c0-68c7-450b-b7f6-25e0bdf642a1" />
+<img width="753" height="454" alt="image" src="https://github.com/user-attachments/assets/7dc23437-d797-4b44-94c7-f41704e82f25" />
+
+## OBSERVACIONES - ONBOARDING (INDIVIDUAL)
+<img width="470" height="147" alt="image" src="https://github.com/user-attachments/assets/5f0e66ad-e939-4436-920b-cd56f4b85c49" />
+
+## NOTA
+<img width="351" height="146" alt="image" src="https://github.com/user-attachments/assets/e5fa6335-1a84-4775-9321-91a1d5fdc262" />
+
+
+
+
+
+
 
  
 
